@@ -31,7 +31,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -64,7 +65,21 @@ header {
   color: #fff;
 }
 
+
+
+header nav{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+}
+header nav ul{
+  display: flex;
+  list-style: none;
+}
+
 header nav ul li {
+  display: flex;
   list-style-type: none;
 }
 
@@ -74,26 +89,37 @@ header nav ul li a {
   padding: 0 20px 0 0;
 }
 
+header nav ul li:last-child a {
+  margin-right: 0;
+}
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
 }
 
+
+
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  
 }
-
 form label {
   font-weight: bold;
+  width: 100px;
+  display: inline-block;
+  margin: 4px;
 }
 
 form select,
 form input {
+  display: inline-block;
   margin-bottom: 20px;
-  width: 180px;
+  max-width: inherit;
+  padding: 4px; 
 }
+
 
 form button {
   background-color: #ff385c;
@@ -102,8 +128,21 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  margin: 4px;
 }
 
+#location{
+  justify-items: flex-end;
+  text-align: center;
+}
+#date{
+  justify-items: flex-end;
+  text-align: center;
+}
+#property-type{
+  justify-items: flex-end;
+  text-align: center;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -117,3 +156,58 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+  }
+
+  .nav-left {
+      margin-inline-start: 0;    
+  }
+
+  .nav-right{
+    font-size: 20px;
+    padding: 1% 0; 
+  }
+  
+  form {
+    border: 2px solid #ff385c;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  section {
+    padding: 10px;
+  }
+  .about-items{
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .about-img1{
+    flex: 1;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .about-img2{
+    flex: 1;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .about-paragraph{
+    flex: 2;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: justify;
+  }
+ 
+
+  
+}
