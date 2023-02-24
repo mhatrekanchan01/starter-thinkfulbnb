@@ -1,0 +1,19 @@
+{
+  "name": "starter-thinkfulbnb",
+  "version": "1.0.0",
+  "description": "Thinkfulbnb is a vacation rental website that allows people to rent out their homes to people who are seeking short-term accommodations in that locale. Thinkfulbnb hosts rent out different kinds of properties, including single rooms, apartments, and unique living spaces such as yachts, houseboats, yurts, tiny houses, and even renovated medieval castles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhatrekanchan01/starter-thinkfulbnb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhatrekanchan01/starter-thinkfulbnb/issues"
+  },
+  "homepage": "https://github.com/mhatrekanchan01/starter-thinkfulbnb#readme"
+}
