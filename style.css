@@ -1,274 +1,191 @@
+html,
+body {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
 
-      /* -------  General Styles ------- */
-      * { box-sizing:border-box }
-      body {
-        font-family: "Lato", sans-serif;
-      }
-      
-      h2 {
-        font-size: 26px;
-        font-weight: 400;
-        margin: 0 10px 10px 10px;
-        text-align: center;
-      }
-      
-      h3 {
-        font-size: 18px;
-        font-weight: 500;
-      }
-      
-      p {
-        line-height: 1.5em;
-        margin: 0;
-      }
-      
-      section {
-        padding: 20px;
-      }
-      
-      section.alternate-background {
-        background-color: #00a699;
-        color: #fff;
-      }
-      
-      main img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-      
-      /* ---  Groups & Items --- */
-      
-      .group {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .item {
-        flex: 1;
-        margin: 10px;
-      }
-      
-      .item-double {
-        flex: 2;
-      }
-      
-      /* -------  Navigation ------- */
-      
-      header {
-        background-color: #ff385c;
-        padding: 20px 20px 0 20px;
-        text-align: center;
-      }
-      
-      .logo {
-        font-family: "Pangolin", cursive;
-        font-size: 60px;
-        color: #fff;
-      }
-      
-      
-      
-      header nav{
-        color: #fff;
-        display: flex;
-        justify-content: center;
-      
-      }
-      header nav ul{
-        display: flex;
-        list-style: none;
-      }
-      
-      header nav ul li {
-        display: flex;
-        list-style-type: none;
-      }
-      
-      header nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        padding: 0 20px 0 0;
-      }
-      
-      header nav ul li:last-child a {
-        margin-right: 0;
-      }
-      header nav ul li a:hover {
-        color: #bdbdbd;
-        text-decoration: none;
-      }
-      
-      
-      
-      /* -------  Search Form ------- */
-      .form-width{
-        width: 100%;
-      }
-      form {
-        border: 2px solid #ff385c;
-        padding: 10px;
-        
-      }
-      form label {
-        display: inline-block;
-        flex-direction: column;
-        font-weight: bold;
-        width: 100px;
-        margin: 4px;
-      }
-      
-      form select,
-      form input {
-        margin-bottom: 20px;
-        padding: 4px; 
-      }
-      
-      
-      form button {
-        background-color: #ff385c;
-        border: none;
-        color: #fff;
-        font-size: 24px;
-        padding: 15px;
-        width: 100%;
-        margin: 4px;
-      }
-      
-      
-      /* -------  Footer ------- */
-      
-      footer {
-        background-color: #ff385c;
-      }
-      
-      footer p {
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      }
-      
-      
-      
-      /* -------  Media Query ------- */
-      @media all and (min-width: 480px) {
-        section {
-          padding: 0 10%;
-        }
-      
-        .navbar-box{
-          display: flex;
-          /*justify-content: space-between;*/
-          /*align-items: center;*/
-          height: 8%;
-          width: 100%;
-        }
-        header nav ul{
-          display: inline-flex;
-          list-style: none;
-        
-        /*header nav{
-         width: 100%;
-        */
-        }
-        header nav ul li {
-          display: contents;
-          list-style-type: none;
-        }
-      
-        header nav ul li a {
-          display: contents;
-        }
-      
-        /*.nav-left {
-            margin-inline-start: 0;    
-        }*/
-      
-        /*nav-right{
-          font-size: 20px;
-          padding: 1% 0; 
-        */
-        
-        form {
-          border: 2px solid #ff385c;
-          display: inline-flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-      
-        .alternate-background{
-          max-width: fit-content;
-          margin: 2%;
-          padding: 1%;
-        }
-        .group-about{
-          display: flex;
-          flex-direction: row; 
-          align-items: center;
-        }
-        .item-about1 {
-          flex: 1;
-          margin: 10px;
-          
-          object-fit: cover;
-        }
-        .item-about2 {
-          flex: 1;
-          margin: 10px;
-          
-          object-fit: cover;
-        }
-        .item-double {
-          flex: 2;
-          font-size: 15px;
-          align-items: center;
-          
-        }
-      
-        .group-ideas {
-          display: flex;
-          flex-direction: row;
-          justify-items: center;
-          align-items: center;
-        }
-        .item-ideas1{
-          flex: 1;
-          margin: 10px;
-          max-width: 600px;
-          max-height: 600px;
-        }
-        .item-ideas2{
-          flex: 1;
-          margin: 10px;
-          max-width: 600px;
-          max-height: 600px;
-        }
-        .item-ideas3{
-          flex: 1;
-          margin: 10px;
-          max-width: 600px;
-          max-height: 600px;
-        }
-        .item-ideas4{
-          flex: 1;
-          margin: 10px;
-          max-width: 600px;
-          max-height: 600px;
-        }
-      
-        .host-group{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-        }
-        .host-paragraph{
-          flex: 1;
-          margin: 10px;
-          font-size: 15px;
-          
-        }
-        .host-img{
-          flex: 1;
-        margin: 10px;
-        }
-      
-      }
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group img {
+  width: 100%;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  max-width: 100%;
+}
+
+form button {
+  background-color: #ff385c;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+}
+
+#vacaForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query for Desktop ------- */
+
+@media screen and (min-width: 480px) {
+
+  /* ------ NavBar ------ */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  header nav ul {
+    padding-top: 14px;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+    text-decoration: none;
+  }
+
+  /* ------- Form ------ */
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .formItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formItem button {
+    transform: translateY(25%);
+    width: 11rem;
+  }
+
+  /* ----- Grouping ----- */
+  .group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ideas-top {
+    display: flex;
+  }
+
+  .ideas-bot {
+    display: flex;
+  }
+}
