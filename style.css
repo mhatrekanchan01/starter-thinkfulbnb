@@ -1,6 +1,6 @@
 html,
 body {
-  width: 100%;
+  width: fit-content;
   font-family: "Lato", sans-serif;
 }
 
@@ -91,7 +91,7 @@ header nav ul li a {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  max-width: 100%;
+ /* max-width: 100%;*/
 }
 
 form button {
@@ -159,13 +159,13 @@ footer p {
   form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
     align-items: baseline;
   }
 
   .formItem {
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
 
